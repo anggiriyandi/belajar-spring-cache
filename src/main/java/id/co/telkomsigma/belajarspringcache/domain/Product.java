@@ -5,6 +5,7 @@
  */
 package id.co.telkomsigma.belajarspringcache.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +20,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Table
 @Entity
-public class Product {
+public class Product implements Serializable{
     
     @Id
     @GeneratedValue(generator = "system-uuid")
